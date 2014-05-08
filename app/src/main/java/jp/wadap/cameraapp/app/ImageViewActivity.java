@@ -18,7 +18,7 @@ public class ImageViewActivity extends ActionBarActivity {
         setContentView(R.layout.activity_image_view);
 
         Intent intent = getIntent();
-        Bitmap bitmap = intent.getParcelableExtra("file");
+        Bitmap bitmap = intent.getParcelableExtra(ImagesActivity.bitmapDataName);
 
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setImageBitmap(bitmap);

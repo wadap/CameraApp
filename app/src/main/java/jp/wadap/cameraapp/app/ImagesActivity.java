@@ -17,6 +17,8 @@ import java.util.ArrayList;
 
 public class ImagesActivity extends ActionBarActivity {
 
+    public static final String bitmapDataName = "bmp_file";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +41,7 @@ public class ImagesActivity extends ActionBarActivity {
                 Bitmap bitmap = (Bitmap)gridView.getItemAtPosition(position);
 
                 Intent i = new Intent(ImagesActivity.this, ImageViewActivity.class);
-                i.putExtra("file", bitmap);
+                i.putExtra(bitmapDataName, bitmap);
                 startActivity(i);
             }
         });
