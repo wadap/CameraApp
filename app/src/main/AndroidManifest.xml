@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.wadap.cameraapp.app" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="jp.wadap.cameraapp.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="jp.wadap.cameraapp.app.Camera"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name="jp.wadap.cameraapp.app.CameraActivity"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name="jp.wadap.cameraapp.app.Images"
+            android:label="@string/title_activity_images" >
+        </activity>
+        <activity
+            android:name="jp.wadap.cameraapp.app.ImagesActivity"
+            android:label="@string/title_activity_images" >
+        </activity>
+        <activity
+            android:name="jp.wadap.cameraapp.app.ImageViewActivity"
+            android:label="@string/title_activity_image_view" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+</manifest>
